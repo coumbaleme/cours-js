@@ -13,5 +13,8 @@ console.log("suprimer dérnier élement",fruits)
 
 //afficher la longueure du tablau
 
-const fruit =["pomme","ananas","cerise","orage"]
+["pomme","ananas","cerise","orage"]
 console.log(fruits.length)
+
+//fitrer un tableau
+

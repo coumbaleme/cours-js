@@ -89,3 +89,15 @@ const resultat= ages.filter(
 );
 console.log("nouveau tableau de age", resultat)
 console.log("nouveau tableau de age", resultat)
+
+
+ 
+console.log(utilisateurs)
+ 
+function ajouterUnUser(nom,mail,role){
+    utilisateurs.push([nom,mail,role])
+    console.log("ajouter")
+}
+ajouterUnUser("varas","agmail.com","user")
+console.log("user",utilisateurs)
+ 
