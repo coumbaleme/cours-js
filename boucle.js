@@ -53,3 +53,27 @@ let fruits =["pomme","banane","cerise"]
 for(let i; i<fruits.length;i++){
     console.log("fruits:", fruits[i])
 }
+
+const products=[
+    
+        {name:"smarphone" ,price: 500},
+        {name:"ordinateur" , price:800},
+        {name:"casque" , price:100},
+        {name:"casqu audio" , price:1000},
+    
+]
+let html="";// on initialise une varaible vide
+for(let i=0; i< products.length; i++) {
+
+    // a chaque interaction on ajoute (+=) une nouvelle div avec le produit corespondant
+    html += `<div class=product">
+    <h3> ${products[i].name} </h3>
+    <p> prix = ${products[i].price} € </p>
+    </div>`
+
+    // apres la boucle html contient maintenant TOUT LE CODE HTML GENERE
+}
+let productList=document.getElementById("product-list")
+productList.innerHTML=html
+
+//"${}" pour inserer des variables directement dans des chaines de caracteres
